@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Bem-vindo, {{ nome }}!</h1>
+        <p>Você está na tela de entrada.</p>
+        <a href="{{ url_for('login') }}" class="button-link">Sair</a>
+    </div>
+</body>
+</html>
